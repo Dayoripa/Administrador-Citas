@@ -28,47 +28,48 @@
             </ul>
           </div>
         </div>
-      </nav>
+    </nav>
       <div class="container-lg">
         <h1 class="text-center my-4 text-white">Administrador de citas</h1>
       </div>
-      <div class="container-lg bg-white mt-4 p-4">
+      <div id="contenido" class="container-lg bg-white mt-4 p-4">
             <img src="./image/Customer Service_Isometric.svg" class="rounded mx-auto d-block" style="width: 250px;" alt="imagen citas">
-          <div class="row">
+          <div id="fila" class="row">
               <div class="col col-sm-6 p-4">
                 <h4 class="my-4">datos del paciente</h4>
-                <form class="bg-light p-4 rounded">
+                <form id="formulario" class="bg-light p-4 rounded">
                     <div class="mb-1"> 
                       <label for="input-name" class="form-label text-capitalize fw-bold">nombre paciente</label>
-                      <input type="text" class="form-control" id="name" aria-describedby="nameHelp">
+                      <input type="text" class="form-control" name="mascota" id="mascota" aria-describedby="mascotaHelp">
                     </div>
                     <div class="mb-1">
                       <label for="input-propietario"s class="form-label fw-bold">Propietario</label>
-                      <input type="text" class="form-control" id="owner">
+                      <input type="text" class="form-control" name="propietario" id="owner">
                     </div>
                     <div class="mb-1">
                         <label for="input-telefono" class="form-label fw-bold">Telefono</label>
-                        <input type="number" class="form-control" id="phone">
+                        <input type="number" class="form-control" name="telefono" id="phone">
                     </div>
                     <div class="mb-1">
                         <label for="input-fecha" class="form-label fw-bold">Fecha</label>
-                        <input type="date" class="form-control" id="date">
+                        <input type="date" class="form-control" name="fecha" id="date">
                       </div>
                       <div class="mb-1">
                         <label for="input-hora" class="form-label fw-bold">Hora</label>
-                        <input type="text" class="form-control" id="hour">
+                        <input type="time" class="form-control" name="hora" id="hour">
                       </div>
                       <div class="mb-1">
                         <label for="FormControlTextarea1" class="form-label text-capitalize fw-bold">sintomas</label>
-                        <textarea class="form-control" id="symptom" rows="3"></textarea>
+                        <textarea class="form-control" name="sintomas" id="symptom" rows="3"></textarea>
                       </div>
                       <div class="d-grid">
                         <button type="submit" class="mt-2 btn btn-primary">Crear Cita</button>
                       </div>               
                   </form>
               </div>
-              <div class="col col-sm-6">
+              <div class="col col-sm-6" id="citas">
                 <h4 class="my-5 text-center">aun no hay citas, puedes crear una</h4>
+                
               </div>
           </div>
       </div>
